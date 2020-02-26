@@ -11,8 +11,9 @@ RUN apk --update add curl bash ttf-dejavu && \
       rm -rf /var/cache/apk/*
 
 # 拷贝应用
-ADD canal /
+ADD canal.tar.gz /
 
 #应用需要暴露的端口
 EXPOSE 8081
 
+ENTRYPOINT ["tail","-f","/dev/null"]
