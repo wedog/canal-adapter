@@ -15,5 +15,3 @@ ADD canal.tar.gz /
 
 #应用需要暴露的端口
 EXPOSE 8081
-
-ENTRYPOINT ["tail","-f","/dev/null"]
